@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<th:block th:include="common/header :: header"></th:block>
+
+<body>
+<!-- Navigation -->
+<th:block th:include="common/header :: navigation"></th:block>
+
+<!-- Page Content -->
+<div class="container">
+
+    <div class="row">
+
+        <!-- Post Content Column -->
+        <div class="col-lg-8">
+            <hr>
+            <div>
+                <h6>
+                    <strong><a href="#" class="item-link-dark">AU2018102093A4</a></strong>
+                    <br>
+                    <small>
+                        发明人：<span class="search-result-item-subtitle" id="inventor">John Green</span>
+                        出版日期：<span class="search-result-item-subtitle" id="publ_date">2018-01-01</span>
+                        专利类型：<span class="search-result-item-subtitle" id="type">Design</span>
+                    </small>
+                </h6>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, tenetur natus doloremque laborum quos iste ipsum rerum obcaecati impedit odit illo dolorum ab tempora nihil dicta earum fugiat.</p>
+            </div>
+
+            <div>
+                <h6>
+                    <strong>AU2018102093A4</strong>
+                    <br>
+                    <small>
+                        发明人：<span class="search-result-item-subtitle">John Green</span>
+                        出版日期：<span class="search-result-item-subtitle">2018-01-01</span>
+                        专利类型：<span class="search-result-item-subtitle">Design</span>
+                    </small>
+                </h6>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, tenetur natus doloremque laborum quos iste ipsum rerum obcaecati impedit odit illo dolorum ab tempora nihil dicta earum fugiat.</p>
+            </div>
+
+            <div>
+                <h6>
+                    <strong>AU2018102093A4</strong>
+                    <br>
+                    <small>
+                        发明人：<span class="search-result-item-subtitle">John Green</span>
+                        出版日期：<span class="search-result-item-subtitle">2018-01-01</span>
+                        专利类型：<span class="search-result-item-subtitle">Design</span>
+                    </small>
+                </h6>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, tenetur natus doloremque laborum quos iste ipsum rerum obcaecati impedit odit illo dolorum ab tempora nihil dicta earum fugiat.</p>
+            </div>
+
+            <div>
+                <h6>
+                    <strong>AU2018102093A4</strong>
+                    <br>
+                    <small>
+                        发明人：<span class="search-result-item-subtitle">John Green</span>
+                        出版日期：<span class="search-result-item-subtitle">2018-01-01</span>
+                        专利类型：<span class="search-result-item-subtitle">Design</span>
+                    </small>
+                </h6>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, tenetur natus doloremque laborum quos iste ipsum rerum obcaecati impedit odit illo dolorum ab tempora nihil dicta earum fugiat.</p>
+            </div>
+
+            <hr>
+        </div>
+
+        <!-- Sidebar Widgets Column -->
+        <div class="col-md-4">
+
+            <!-- Categories Widget -->
+            <div class="card my-4">
+                <h6 class="card-header">精确检索</h6>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6">
+                            <div class="form-group">
+                                <label class="control-label">
+                                    起始(出版)日期
+                                </label>
+                                <input type="text" class="form-control form-control-sm" placeholder="YYYY-mm-dd">
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <div class="form-group">
+                                <label class="control-label">
+                                    结束(出版)日期
+                                </label>
+                                <input type="text" class="form-control form-control-sm" placeholder="YYYY-mm-dd">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label class="control-label">
+                                    发明人
+                                </label>
+                                <input type="text" class="form-control form-control-sm" placeholder="FirstName LastName">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6">
+                            <div class="form-group">
+                                <label class="control-label">
+                                    IPC-class:
+                                </label>
+                                <select class="control-label">
+                                    <option value="A">A</option>
+                                    <option value="B">B</option>
+                                    <option value="B">C</option>
+                                    <option value="B">D</option>
+                                    <option value="B">E</option>
+                                    <option value="B">F</option>
+                                    <option value="B">G</option>
+                                    <option value="B">H</option>
+                                    <option value="B">I</option>
+                                    <option value="B">J</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <div class="form-group">
+                                <label class="control-label">
+                                    IPC-section
+                                </label>
+                                <select class="control-label">
+
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row col-sm-12 col-md-6">
+                        <span class="input-group-btn">
+                            <button class="btn btn-secondary" type="button">Go</button>
+                        </span>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- /.row -->
+
+</div>
+<!-- /.container -->
+
+<!-- Footer -->
+<th:block th:include="common/footer :: footer"></th:block>
+
+<!-- Bootstrap core JavaScript -->
+<script th:src="@{jquery/jquery.min.js}"></script>
+<script th:src="@{bootstrap/js/bootstrap.bundle.min.js}"></script>
+<script>
+    $(function () {
+        $("#navigation").load("navigation.html")
+    });
+</script>
+
+</body>
+</html>
